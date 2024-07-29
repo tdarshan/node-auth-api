@@ -17,22 +17,22 @@ Features:
 Routes : 
 
 Register User 
-    POST : '/users/register'
+    POST : '/api/users/register'
     payload : {fullName, email, password, username, avatar(file), coverImage(file)}
     response : {statusCode, data: User, message, success}
 
 Login 
-    POST : '/users/login'
+    POST : '/api/users/login'
     payload: {email, password}
     response : {statusCode, data: {user, accessToken, refreshToken}, message, success}
 
 Logout : 
-    POST : '/users/logout'
+    POST : '/api/users/logout'
     Headers : {Cookie: accessToken=ACCESS_TOKEN; refreshToken: REFRESH_TOKEN}
     response : { "statusCode": 200, "data": {}, "message": "User logged out!", "success": true}
 
 Refresh Tokens : 
-    POST : '/users/refresh-token'
+    POST : '/api/users/refresh-token'
     Headers : {Cookie: accessToken=ACCESS_TOKEN; refreshToken: REFRESH_TOKEN}
     response : {
                 "statusCode": 200, "data": { "accessToken": ACCESS_TOKEN, "refreshToken": REFRESH_TOKEN }, 
@@ -42,18 +42,18 @@ Refresh Tokens :
 
 
 Change Password : 
-    PUT : '/users/change-password'
+    PUT : '/api/users/change-password'
     payload: { "oldPassword": OLD_PASSWORD, "newPassword": NEW_PASSWORD }
     response : { "statusCode": 200, "data": {}, "message": "Password changed successfully", "success": true }
 
 
 Get User : 
-    GET : '/users/get-user'
+    GET : '/api/users/get-user'
     response: Current user saved in request (req.user)
 
 
 Update Detais : 
-    PUT : '/users/update-user'
+    PUT : '/api/users/update-user'
     payload : { "fullName": NEW_FULL_NAME }
     response : { "statusCode": 200, "data": UPDATED_USER, "message": "Account details updated successfully", 
                   "success": true
@@ -61,7 +61,7 @@ Update Detais :
 
 
 Update avatar : 
-    PUT : '/users/update-avatar'
+    PUT : '/api/users/update-avatar'
     payload : (File : avatar)
     response : { "statusCode": 200, "data": UPDATED_USER, 
                  "message": "Avatar image updated successfully!", 
@@ -69,7 +69,7 @@ Update avatar :
                }
 
 Update CoverImage : 
-    PUT : '/users/update-cover'
+    PUT : '/api/users/update-cover'
     payload : {File: coverImage}
     response : {
                 "statusCode": 200, "data": UPDATED_USER, "message": "Cover image updated successfully!", "success": true
