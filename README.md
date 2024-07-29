@@ -1,5 +1,18 @@
 NodeJS, ExpressJS, MongoDB Login - Auth API
 
+Live URL : 
+
+
+Summary: A JWT (JSON Web Token) based authentication API to use as authentication
+for any frontend.
+Technology : JavaScript, NodeJS, ExpressJS, MongoDB (Mongoose), JWT
+Team Size : 1
+Role : Developed independently
+Features:
+    ● Bcrypt based hashing for password
+    ● Access and Refresh token using JWT.
+    ● Multer file upload
+
 
 Routes : 
 
