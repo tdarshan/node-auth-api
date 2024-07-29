@@ -23,11 +23,11 @@ import userRouter from './routes/user.routes.js';
 
 
 // Test Route
-// app.get("/", (req, res) => {
-//     res.status(200).json({
-//         message: "Welcome to the API"
-//     });
-// })
+app.get("/", (req, res) => {
+    res.status(200).json({
+        message: "Welcome to the API"
+    });
+});
 
 
 // Routes decleration
