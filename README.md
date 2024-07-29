@@ -1,6 +1,6 @@
 NodeJS, ExpressJS, MongoDB Login - Auth API
 
-Live URL : <a href='https://node-backend-auth.onrender.com' target='_blank'>https://node-backend-auth.onrender.com</a>
+Live URL : <a href='https://node-auth-api-c0x9.onrender.com' target='_blank'>https://node-auth-api-c0x9.onrender.com</a>
 
 
 Summary: A JWT (JSON Web Token) based authentication API to use as authentication
